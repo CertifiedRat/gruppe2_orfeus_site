@@ -3,6 +3,8 @@ import "../styles/global.css";
 import { Image } from "astro:assets";
 import Banner from "../components/Banner.astro";
 import test from "../assets/1udaf5.png";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import PostIts from "../components/Post-its.astro";
 import green from "../assets/postit-green.png";
 import green2 from "../assets/postit-green2.png";
@@ -28,6 +30,7 @@ import rasmus from "../assets/rasmus.png";
   </head>
   <body>
     <header>
+<Header/>
     </header>
 
     <main>
@@ -36,23 +39,27 @@ import rasmus from "../assets/rasmus.png";
       <h1 class="display">Du er ikke alene</h1></div>
   <div class="sliding-background"></div> 
 </article>
+<article>
       <h2>Er du ung og pårørende til en med et misbrug? Du behøver ikke stå alene</h2>
       <br><p>Rådgivningen Orfeus er en frivilligorganisation, som yder rådgivning og støtte til mennesker ramt af misbrug. 
 Vores rådgivning har primært fokuspårørende til dem som er i misbrug.
 <br>
 Vores rådgivning er 100% telefonisk eller online og derfor er vi også landsdækkende, hvilket betyder at alle i Danmark med en telefon eller en internetforbindelse, kan bruge vores tilbud.</p>
-
-<article class="banner banner1">
+<a class="cta-btn btn-left" href="/">Tag Kontakt - Gratis & Anonymt</a>
+</article>
+<article class="banner">
+  <div class="banner1">
   <h2>1 ud af 5</h2>
   <p>danskere er potentielt berørt af misbrug <br>-enten selv eller som pårørende</p>
-<!-- <Image class="banner1img" src={test} alt="ddd"/> -->
-</article>
+</div></article>
 <article>
   <h2>Du er ikke Alene!</h2>
   <br>
   <p>Se, hvad andre pårørende fortæller
 <br><br>
 Du er ikke den eneste, der kan have det sådan. Læs med og mød andre pårørende, som deler deres oplevelser, tanker og følelser. Måske kan du genkende dig selv i noget af det, de fortæller.</p>
+<br>
+<div class="grid_2-2">
 <PostIts
 tekst="“Det er svært at være den unge, der altid skal være den stærke”"
 navn="Anonym, 18 år"
@@ -68,6 +75,7 @@ tekst="“Det er ikke dit ansvar at få dem ud af deres misbrug.”"
 navn="Kvinde, 23 år"
 baggrund={orange2}
 />
+<div class="flex-span">
 <PostIts
 tekst="“Jeg troede, det bare var mig, der havde det sådan.”"
 navn="Kvinde, 30 år"
@@ -77,45 +85,60 @@ baggrund={orange}
 tekst="“Du kan godt elske dem højt og stadig have brug for at sætte en grænse.”"
 navn="Martin, 18 år"
 baggrund={orange3}
-/>
+/></div></div>
 </article>
 <article class="banner banner2">
 <h2>Det er ikke skamfuldt at søge hjælp</h2>
 <p>- Smid Masken</p>
 <a href="https://www.raadgivningen-orfeus.dk/vores-raadgivningstilbud/" class="cta-btn">Kontakt Os</a>
 </article>
+
 <article>
   <h2>Vi er her for dig</h2>
   <br>
   <p>Vores arbejdende team - Jan, Rasmus og Astrid - står for den daglige drift og koordineringen mellem rådsøgere og rådgivere. Vi arbejder også alle tre som frivillige i rådgivningen og yder gratis rådgivning til misbrugsramte og deres pårørende.</p>
 <br>
-  <div class="grid_1-1-1">
+<div class="grid_1-1-1">
+
+  <div class="teamet">
 <Image src={jan} alt="Billede af Jan"/>
+<div>
 <p><strong>Jan Stig Salling</strong></p>
-<p>Daglig leder</p>
+<p>Daglig leder</p></div>
+<div>
 <p><strong>Mail:</strong></p>
 <a href="mailto:janstig@raadgivningen-orfeus.dk">janstig@raadgivningen-orfeus.dk</a>
-
-<p><strong>Tlf:</strong></p><p>60 91 40 00</p>
 </div>
-<div class="grid_1-1-1">
+<span>
+<p><strong>Tlf:</strong></p>
+<p>60 91 40 00</p></span>
+</div>
+
+<div class="teamet">
 <Image src={rasmus} alt="Billede af Rasmus"/>
+<div>
 <p><strong>Rasmus Troldahl</strong></p>
-<p>Koordinator</p>
+<p>Koordinator</p></div>
+<div>
 <p><strong>Mail:</strong></p>
 <a href="mailto:rasmus@raadgivningen-orfeus.dk">rasmus@raadgivningen-orfeus.dk</a>
-</div>
-<div class="grid_1-1-1">
+</div></div>
+
+<div class="teamet">
 <Image src={astrid} alt="Billede af Astrid"/>
+<div>
 <p><strong>Astrid Nørgaard</strong></p>
-<p>Koordinator</p>
+<p>Koordinator</p></div>
+<div>
 <p><strong>Mail:</strong></p>
 <a href="mailto:astrid@raadgivningen-orfeus.dk">astrid@raadgivningen-orfeus.dk</a>
+</div></div>
 </div>
 </article>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
     </main>
 
-    <footer></footer>
+    <footer>
+      <Footer/>
+    </footer>
   </body>
 </html>

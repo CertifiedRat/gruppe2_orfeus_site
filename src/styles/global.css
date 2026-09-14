@@ -78,7 +78,10 @@ body {
   color: var(--color-gray950);
 }
 article {
+  max-width: 1200px;
+  width: 100%;
   margin-bottom: 4rem;
+  margin-inline: auto;
   padding: 0 1rem;
 }
 h1 {
@@ -109,13 +112,51 @@ p.btn {
   font-size: 30px;
 }
 
+/*BTN*/
+.cta-btn {
+  display: block;
+  font-family: "Lexend Exa";
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+  height: min-content;
+  width: fit-content;
+  align-content: center;
+  padding: 12px 2rem;
+  background-color: var(--color-orange400);
+}
+.btn-left {
+  place-self: end;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.btn-right {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
 /************************* Hero slideshow *****************************/
 .slide-wrapper {
   position: relative;
+  margin: 0 0 2rem;
+  padding: 0;
   overflow: hidden;
+  max-width: 100%;
+}
+.display-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: space-around;
+  text-align: center;
+  padding-inline: 2.5rem;
+  z-index: 2;
 }
 .sliding-background {
-  background: url(../assets/carrousel-test.png) repeat-x;
+  background: url(../../public/assets/carrousel.webp) repeat-x;
   background-size: contain;
   height: 600px;
   width: 5000px;
@@ -126,34 +167,34 @@ p.btn {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-2399px, 0, 0);
+    transform: translate3d(-3200px, 0, 0);
   }
 }
 h1.display {
   font-family: "DM Sans";
-  font-weight: 900;
-  font-size: 128px;
+  font-weight: 600;
+  font-size: clamp(6.25rem, 3.8rem + 11.2vw, 8rem);
   text-transform: uppercase;
-  text-align: center;
-  position: absolute;
   width: 100%;
-  z-index: 2;
   color: var(--color-white);
+  line-height: 1.65;
 }
 /*******************banner**************************/
 .banner {
+  background-color: var(--color-green700);
+  color: var(--color-white);
+  max-width: 100%;
+  margin: 0 0 4rem;
+}
+.banner1 {
   display: grid;
   grid-template-rows: min-content;
   gap: 1rem;
-  background-color: var(--color-green700);
-  color: var(--color-white);
-}
-.banner1 {
   height: 350px;
-  background-image: url(../assets/1udaf5.png);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: max(600px);
+  max-width: 1200px;
+  margin-inline: auto;
+  background: url(../assets/1udaf5.png) no-repeat left bottom;
+  background-size: max(600);
   justify-content: center;
   padding-top: 4rem;
 }
@@ -164,4 +205,34 @@ h1.display {
   background-position: right;
   background-size: contain;
   padding: 4rem 2rem;
+}
+/******************** Teamet *********************/
+.teamet {
+  display: grid;
+  gap: 1rem;
+  a {
+    font-family: "Open Sans";
+    color: var(--color-gray950);
+  }
+}
+/********************** Layout **************************/
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .grid_2-2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .flex-span {
+    display: flex;
+    grid-column: span 3;
+    justify-content: space-around;
+  }
 }

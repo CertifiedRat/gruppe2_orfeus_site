@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo-1.svg";
+---
+
+<header>
+    <a href="/">
+    <Image src={logo} alt="Illustration af en harpe, som er Orfeus's logo"/></a>
+<a class="kontakt" href="https://www.raadgivningen-orfeus.dk/vores-raadgivningstilbud/">Kontakt Os</a>
+</header>
+<style>
+    header {
+        display: flex;
+        height: 65px;
+        margin-inline: auto;
+        align-items: center;
+        max-width: 1200px;
+        padding-inline: 1.5rem;
+        justify-content: space-between;
+    img {
+        max-height: 50px;
+    }
+    .kontakt {
+        font-family: "Open Sans";
+        color: var(--color-orange400);
+        font-weight: 700;
+        text-decoration: none;
+        display: none;
+    }
+    }
+    @media (min-width: 600px) {
+        a.kontakt {
+            display: block;
+        }
+    }
+</style>

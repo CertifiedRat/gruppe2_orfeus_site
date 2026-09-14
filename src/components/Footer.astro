@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo-1.svg";
+---
+
+<footer>
+    <div>
+    <a href="/">
+    <Image src={logo} alt="Illustration af en harpe, som er Orfeus's logo"/></a>
+<br>
+<p>Lorem ipsum dolor sit amet consectetur. Quis senectus felis turpis lorem congue feugiat sagittis dictum.</p>
+</div>
+<div>
+    <p><strong>Socials</strong></p>
+    <a href="/">Facebook</a>
+    <a href="/">Instagram</a>
+</div>
+<div>
+<div>
+    <p><strong>Vores sider</strong></p>
+    <a href="/"> Lorem</a>
+    <a href="/">Ipsum</a>
+    <a href="/">Dolor</a>
+    <a href="/">Sit Amet</a>
+</div>
+<br>
+<div>
+    <p><strong>Kontakt</strong></p>
+    <p>+45 70604657</p>
+    <a href="mailto:kontakt@raadgivningen-orfeus.dk">kontakt@raadgivningen-orfeus.dk</a>
+    <p>CVR: 46258657</p>
+</div></div>
+</footer>
+
+<style>
+    footer {
+        display: grid;
+        background-color: var(--color-green800);
+        gap: 1.5rem;
+        padding: 4rem 2rem;
+        color: var(--color-white);
+        img {
+            max-width: 400px;
+        }
+        a {
+            display: block;
+            font-family: "Open Sans";
+            color: var(--color-white);
+            font-weight: 300;
+        }
+
+    }
+@media (min-width:800px) {
+    footer {
+        grid-template-columns: 2fr 1fr 1fr;
+        padding-top: 6rem;
+    }
+}
+</style>
