@@ -80,7 +80,7 @@ body {
 article {
   max-width: 1200px;
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   margin-inline: auto;
   padding: 0 1rem;
 }
@@ -156,7 +156,7 @@ p.btn {
   z-index: 2;
 }
 .sliding-background {
-  background: url(../../public/assets/carrousel.webp) repeat-x;
+  background: url(/assets/carrousel.webp) repeat-x;
   background-size: contain;
   height: 600px;
   width: 5000px;
@@ -184,7 +184,7 @@ h1.display {
   background-color: var(--color-green700);
   color: var(--color-white);
   max-width: 100%;
-  margin: 0 0 4rem;
+  margin: 0 0 6rem;
 }
 .banner1 {
   display: grid;
@@ -199,34 +199,69 @@ h1.display {
   padding-top: 4rem;
 }
 .banner2 {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 2rem;
+  max-width: 1000px;
+  margin-inline: auto;
   height: 600px;
-  background-image: url(../assets/maskoff.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  padding: 4rem 2rem;
+  padding: 4rem 0 0 1rem;
+  background: url(../assets/maskoff.png) no-repeat left bottom;
+  background-size: max(600px);
+  h2 {
+    max-width: 12ch;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+/********** Post it's ***************/
+.np {
+  padding: 0;
+}
+.p-1 {
+  padding: 0 1.5rem;
 }
 /******************** Teamet *********************/
 .teamet {
   display: grid;
   gap: 1rem;
+  padding: 1rem;
+  max-width: 320px;
   a {
     font-family: "Open Sans";
     color: var(--color-gray950);
   }
 }
 /********************** Layout **************************/
-@media (min-width: 800px) {
+@media (min-width: 618px) {
+  .banner2 {
+    background-position-x: right;
+  }
   .grid_1-1-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
+}
+@media (min-width: 700px) {
   .grid_2-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+@media (min-width: 800px) {
+  .banner2 {
+    p {
+      max-width: 30ch;
+      text-align: end;
+      font-size: 24px;
+    }
+  }
+}
 @media (min-width: 1000px) {
+  .grid_1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .grid_2-2 {
     grid-template-columns: 1fr 1fr 1fr;
   }
