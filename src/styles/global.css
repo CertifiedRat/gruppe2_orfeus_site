@@ -124,6 +124,7 @@ p.btn {
   width: fit-content;
   align-content: center;
   padding: 12px 2rem;
+  margin: 2px;
   background-color: var(--color-orange400);
 }
 .btn-left {
@@ -134,6 +135,11 @@ p.btn {
 .btn-right {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+.cta-btn:hover {
+  padding: 13px 33px;
+  margin: 0;
+  background-color: #cd4d22;
 }
 
 /************************* Hero slideshow *****************************/
@@ -154,9 +160,10 @@ p.btn {
   text-align: center;
   padding-inline: 2.5rem;
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .sliding-background {
-  background: url(/assets/carrousel.webp) repeat-x;
+  background: url(/assets/carrousel70.webp) repeat-x;
   background-size: contain;
   height: 600px;
   width: 5000px;
@@ -173,7 +180,7 @@ p.btn {
 h1.display {
   font-family: "DM Sans";
   font-weight: 600;
-  font-size: clamp(6.25rem, 3.8rem + 11.2vw, 8rem);
+  font-size: clamp(4rem, 2.99rem + 4.615vw, 5.875rem);
   text-transform: uppercase;
   width: 100%;
   color: var(--color-white);
@@ -193,8 +200,8 @@ h1.display {
   height: 350px;
   max-width: 1200px;
   margin-inline: auto;
-  background: url(/assets/1udaf5.png) no-repeat left bottom;
-  background-size: max(600);
+  background: url(../assets/1udaf5.webp) no-repeat left bottom;
+  background-size: max(600px);
   justify-content: center;
   padding-top: 4rem;
 }
@@ -206,7 +213,7 @@ h1.display {
   margin-inline: auto;
   height: 600px;
   padding: 4rem 0 0 1rem;
-  background: url(../assets/maskoff.png) no-repeat left bottom;
+  background: url(../assets/maskoff.webp) no-repeat left bottom;
   background-size: max(600px);
   h2 {
     max-width: 12ch;
