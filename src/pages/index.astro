@@ -25,7 +25,8 @@ import rasmus from "../assets/rasmus.png";
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Exa:wght@100..900&family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Orfeus Rådgivning Kampagne</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<title>Orfeus Rådgivning Kampagne</title>
   </head>
   <body>
     <header>
@@ -58,35 +59,72 @@ Vores rådgivning er 100% telefonisk eller online og derfor er vi også landsdæ
   <br>
   <p>Se, hvad andre pårørende fortæller
 <br><br>
-Du er ikke den eneste, der kan have det sådan. Læs med og mød andre pårørende, som deler deres oplevelser, tanker og følelser. Måske kan du genkende dig selv i noget af det, de fortæller.</p>
+Læs med og mød andre pårørende, som deler deres oplevelser, tanker og følelser. Måske kan du genkende dig selv i noget af det, de fortæller.</p>
 <br></div>
 <div class="grid_2-2">
+
+  <button popovertarget="green">
 <PostIts
 tekst="“Det er svært at være den unge, der altid skal være den stærke”"
 navn="Anonym, 18 år"
-baggrund={green}
-/>
+baggrund={green}/>
+</button>
+<div popover id="green" class="popover-indhold">
+  <button popovertarget="green" class="popover-close">&#10005;</button>
+  <h3>Overskrift</h3><br><p>Lorem ipsum dolor sit amet consectetur. Lacus ac vitae elit vitae malesuada pharetra vel mus feugiat. Arcu quam scelerisque duis purus mauris platea faucibus vestibulum pulvinar. Nunc in turpis ipsum orci phasellus dictum amet. Proin aliquam varius nibh libero urna tincidunt amet.</p><br><p>Egestas ut placerat a id lectus ut suscipit. Pellentesque sit nibh imperdiet adipiscing ut. Lorem sed ac mauris sem. Vel sollicitudin eget malesuada vitae ac integer ut mattis varius. A mauris vitae etiam nec. Tristique a morbi vulputate elit vel. Arcu tellus consectetur massa risus urna sed purus nec ut. Mattis lacinia consectetur leo augue vehicula sollicitudin. Pellentesque amet neque nunc morbi nulla pretium nulla tortor diam.</p><br><p>Urna ornare turpis eu aliquet elementum et. Massa dictum vel elit magna metus pulvinar. Risus morbi mi pulvinar at. Molestie a quam nec tempor id varius risus enim convallis. Vulputate ultrices scelerisque lorem quam molestie ut neque tristique tortor. Gravida imperdiet in aliquet enim. Orci sagittis nibh faucibus quis netus tortor. Elementum in id pulvinar ullamcorper suspendisse scelerisque dui eget. Duis sed in cras consequat integer est accumsan in vitae. </p><br><p>Phasellus ac nulla parturient massa eu amet. Scelerisque vel scelerisque rhoncus dolor faucibus vel.</p><br><br><p class="navn">Navn, alder</p>
+</div>
+
+  <button popovertarget="green2">
 <PostIts
 tekst="“Du er ikke egoistisk, fordi du også har brug for at passe på dig selv”"
 navn="Kvinde, 22 år"
-baggrund={green2}
-/>
+baggrund={green2} />
+</button>
+<div popover id="green2" class="popover-indhold">
+  <button popovertarget="green2" class="popover-close">&#10005;</button>
+  <h3>Overskrift</h3><br><p>Lorem ipsum dolor sit amet consectetur. Lacus ac vitae elit vitae malesuada pharetra vel mus feugiat. Arcu quam scelerisque duis purus mauris platea faucibus vestibulum pulvinar. Nunc in turpis ipsum orci phasellus dictum amet. Proin aliquam varius nibh libero urna tincidunt amet.</p><br><p>Egestas ut placerat a id lectus ut suscipit. Pellentesque sit nibh imperdiet adipiscing ut. Lorem sed ac mauris sem. Vel sollicitudin eget malesuada vitae ac integer ut mattis varius. A mauris vitae etiam nec. Tristique a morbi vulputate elit vel. Arcu tellus consectetur massa risus urna sed purus nec ut. Mattis lacinia consectetur leo augue vehicula sollicitudin. Pellentesque amet neque nunc morbi nulla pretium nulla tortor diam.</p><br><p>Urna ornare turpis eu aliquet elementum et. Massa dictum vel elit magna metus pulvinar. Risus morbi mi pulvinar at. Molestie a quam nec tempor id varius risus enim convallis. Vulputate ultrices scelerisque lorem quam molestie ut neque tristique tortor. Gravida imperdiet in aliquet enim. Orci sagittis nibh faucibus quis netus tortor. Elementum in id pulvinar ullamcorper suspendisse scelerisque dui eget. Duis sed in cras consequat integer est accumsan in vitae. </p><br><p>Phasellus ac nulla parturient massa eu amet. Scelerisque vel scelerisque rhoncus dolor faucibus vel.</p><br><br><p class="navn">Navn, alder</p>
+</div>
+
+
+  <button popovertarget="orange3">
 <PostIts
 tekst="“Det er ikke dit ansvar at få dem ud af deres misbrug.”"
 navn="Kvinde, 23 år"
 baggrund={orange2}
 />
+</button>
+<div popover id="orange3" class="popover-indhold">
+  <button popovertarget="orange3" class="popover-close">&#10005;</button>
+  <h3>Overskrift</h3><br><p>Lorem ipsum dolor sit amet consectetur. Lacus ac vitae elit vitae malesuada pharetra vel mus feugiat. Arcu quam scelerisque duis purus mauris platea faucibus vestibulum pulvinar. Nunc in turpis ipsum orci phasellus dictum amet. Proin aliquam varius nibh libero urna tincidunt amet.</p><br><p>Egestas ut placerat a id lectus ut suscipit. Pellentesque sit nibh imperdiet adipiscing ut. Lorem sed ac mauris sem. Vel sollicitudin eget malesuada vitae ac integer ut mattis varius. A mauris vitae etiam nec. Tristique a morbi vulputate elit vel. Arcu tellus consectetur massa risus urna sed purus nec ut. Mattis lacinia consectetur leo augue vehicula sollicitudin. Pellentesque amet neque nunc morbi nulla pretium nulla tortor diam.</p><br><p>Urna ornare turpis eu aliquet elementum et. Massa dictum vel elit magna metus pulvinar. Risus morbi mi pulvinar at. Molestie a quam nec tempor id varius risus enim convallis. Vulputate ultrices scelerisque lorem quam molestie ut neque tristique tortor. Gravida imperdiet in aliquet enim. Orci sagittis nibh faucibus quis netus tortor. Elementum in id pulvinar ullamcorper suspendisse scelerisque dui eget. Duis sed in cras consequat integer est accumsan in vitae. </p><br><p>Phasellus ac nulla parturient massa eu amet. Scelerisque vel scelerisque rhoncus dolor faucibus vel.</p><br><br><p class="navn">Navn, alder</p>
+</div>
+
+
 <div class="flex-span">
+  <button popovertarget="orange2">
 <PostIts
 tekst="“Jeg troede, det bare var mig, der havde det sådan.”"
 navn="Kvinde, 30 år"
 baggrund={orange}
 />
+</button>
+<div popover id="orange2" class="popover-indhold">
+  <button popovertarget="orange2" class="popover-close">&#10005;</button>
+  <h3>Overskrift</h3><br><p>Lorem ipsum dolor sit amet consectetur. Lacus ac vitae elit vitae malesuada pharetra vel mus feugiat. Arcu quam scelerisque duis purus mauris platea faucibus vestibulum pulvinar. Nunc in turpis ipsum orci phasellus dictum amet. Proin aliquam varius nibh libero urna tincidunt amet.</p><br><p>Egestas ut placerat a id lectus ut suscipit. Pellentesque sit nibh imperdiet adipiscing ut. Lorem sed ac mauris sem. Vel sollicitudin eget malesuada vitae ac integer ut mattis varius. A mauris vitae etiam nec. Tristique a morbi vulputate elit vel. Arcu tellus consectetur massa risus urna sed purus nec ut. Mattis lacinia consectetur leo augue vehicula sollicitudin. Pellentesque amet neque nunc morbi nulla pretium nulla tortor diam.</p><br><p>Urna ornare turpis eu aliquet elementum et. Massa dictum vel elit magna metus pulvinar. Risus morbi mi pulvinar at. Molestie a quam nec tempor id varius risus enim convallis. Vulputate ultrices scelerisque lorem quam molestie ut neque tristique tortor. Gravida imperdiet in aliquet enim. Orci sagittis nibh faucibus quis netus tortor. Elementum in id pulvinar ullamcorper suspendisse scelerisque dui eget. Duis sed in cras consequat integer est accumsan in vitae. </p><br><p>Phasellus ac nulla parturient massa eu amet. Scelerisque vel scelerisque rhoncus dolor faucibus vel.</p><br><br><p class="navn">Navn, alder</p>
+</div>
+
+  <button popovertarget="orange1">
 <PostIts
 tekst="“Du kan godt elske dem højt og stadig have brug for at sætte en grænse.”"
 navn="Martin, 18 år"
 baggrund={orange3}
-/></div></div>
+/>
+</button>
+<div popover id="orange1" class="popover-indhold">
+  <button popovertarget="orange1" class="popover-close">&#10005;</button>
+  <h3>Overskrift</h3><br><p>Lorem ipsum dolor sit amet consectetur. Lacus ac vitae elit vitae malesuada pharetra vel mus feugiat. Arcu quam scelerisque duis purus mauris platea faucibus vestibulum pulvinar. Nunc in turpis ipsum orci phasellus dictum amet. Proin aliquam varius nibh libero urna tincidunt amet.</p><br><p>Egestas ut placerat a id lectus ut suscipit. Pellentesque sit nibh imperdiet adipiscing ut. Lorem sed ac mauris sem. Vel sollicitudin eget malesuada vitae ac integer ut mattis varius. A mauris vitae etiam nec. Tristique a morbi vulputate elit vel. Arcu tellus consectetur massa risus urna sed purus nec ut. Mattis lacinia consectetur leo augue vehicula sollicitudin. Pellentesque amet neque nunc morbi nulla pretium nulla tortor diam.</p><br><p>Urna ornare turpis eu aliquet elementum et. Massa dictum vel elit magna metus pulvinar. Risus morbi mi pulvinar at. Molestie a quam nec tempor id varius risus enim convallis. Vulputate ultrices scelerisque lorem quam molestie ut neque tristique tortor. Gravida imperdiet in aliquet enim. Orci sagittis nibh faucibus quis netus tortor. Elementum in id pulvinar ullamcorper suspendisse scelerisque dui eget. Duis sed in cras consequat integer est accumsan in vitae. </p><br><p>Phasellus ac nulla parturient massa eu amet. Scelerisque vel scelerisque rhoncus dolor faucibus vel.</p><br><br><p class="navn">Navn, alder</p>
+</div>
+
+</div></div>
 </article>
 
 <article class="banner">
@@ -140,8 +178,6 @@ baggrund={orange3}
 </article>
     </main>
 
-    <footer>
       <Footer/>
-    </footer>
   </body>
 </html>

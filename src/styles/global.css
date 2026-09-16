@@ -1,22 +1,14 @@
 /************************** Custom ***************************/
 :root {
-  --color-green950: rgba(7, 14, 8, 1);
-  --color-green900: rgba(19, 32, 21, 1);
   --color-green800: rgba(32, 45, 32, 1);
   --color-green700: rgba(53, 75, 59, 1);
   --color-green600: rgba(71, 94, 79, 1);
   --color-green500: rgba(98, 130, 104, 1);
   --color-green400: rgba(168, 190, 172, 1);
-  --color-green300: rgba(205, 218, 207, 1);
-  --color-green200: rgba(226, 233, 227, 1);
-  --color-green100: rgba(243, 246, 245, 1);
-  --color-green50: rgba(248, 251, 250, 1);
 
   --color-orange400: rgba(255, 117, 72, 1);
   --color-orange300: rgba(255, 157, 113, 1);
   --color-orange200: rgba(255, 197, 168, 1);
-  --color-orange100: rgba(255, 228, 212, 1);
-  --color-orange50: rgba(255, 243, 237, 1);
 
   --color-white: rgba(255, 250, 247, 1);
   --color-gray950: rgba(9, 10, 11, 1);
@@ -80,9 +72,9 @@ body {
 article {
   max-width: 1200px;
   width: 100%;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   margin-inline: auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 h1 {
   font-family: "Lexend Exa";
@@ -92,13 +84,13 @@ h1 {
 h2 {
   font-family: "Lexend Exa";
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   max-width: 20ch;
 }
 h3 {
   font-family: "Lexend Exa";
   font-weight: 400;
-  font-size: 40px;
+  font-size: 36px;
 }
 p {
   font-family: "Open Sans";
@@ -145,7 +137,7 @@ p.btn {
 /************************* Hero slideshow *****************************/
 .slide-wrapper {
   position: relative;
-  margin: 0 0 2rem;
+  margin: 0 0 3rem;
   padding: 0;
   overflow: hidden;
   max-width: 100%;
@@ -201,7 +193,7 @@ h1.display {
   max-width: 1200px;
   margin-inline: auto;
   background: url(../assets/1udaf5.webp) no-repeat left bottom;
-  background-size: max(600px);
+  background-size: contain;
   justify-content: center;
   padding-top: 4rem;
 }
@@ -229,12 +221,65 @@ h1.display {
 .p-1 {
   padding: 0 1.5rem;
 }
+.grid_2-2 button {
+  border: none;
+  text-align: left;
+}
+:popover-open {
+  display: grid;
+  grid-template-columns: auto minmax(0, 600px) auto;
+  border: none;
+  gap: 1rem;
+  width: 90%;
+  max-height: 90%;
+  justify-self: center;
+  margin-top: 10%;
+  max-width: 800px;
+  padding: 0 0 2rem 1rem;
+  color: var(--color-white);
+  .navn {
+    text-align: end;
+  }
+  h3,
+  p {
+    grid-column: 2 / 3;
+  }
+}
+[popover]::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+.popover-close {
+  grid-column: 3 / 4;
+  justify-self: end;
+  font-size: 24px;
+  padding: 1rem 1rem 0 0;
+  cursor: pointer;
+}
+#green {
+  background-color: var(--color-green600);
+}
+#green2 {
+  background-color: var(--color-green500);
+}
+#orange3 {
+  background-color: var(--color-orange200);
+}
+#orange2 {
+  background-color: var(--color-orange300);
+}
+#orange1 {
+  background-color: var(--color-orange400);
+}
 /******************** Teamet *********************/
+.grid_1-1-1 {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
 .teamet {
   display: grid;
   gap: 1rem;
-  padding: 1rem;
-  max-width: 320px;
+  max-width: 400px;
   a {
     font-family: "Open Sans";
     color: var(--color-gray950);
@@ -248,6 +293,9 @@ h1.display {
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .teamet {
+    max-width: 320px;
   }
 }
 @media (min-width: 700px) {
