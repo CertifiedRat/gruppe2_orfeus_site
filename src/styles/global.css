@@ -232,8 +232,7 @@ h1.display {
   gap: 1rem;
   width: 90%;
   max-height: 90%;
-  justify-self: center;
-  margin-top: 10%;
+  place-self: center;
   max-width: 800px;
   padding: 0 0 2rem 1rem;
   color: var(--color-white);
